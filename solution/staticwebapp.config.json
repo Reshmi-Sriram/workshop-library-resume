@@ -3,11 +3,11 @@
     {
       "route": "/api/projects/*",
       "methods": ["GET", "PUT", "POST", "DELETE"],
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated","anonymous"]
     },
     {
       "route": "/api/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated","anonymous"]
     },
     {
       "route": "/logout",

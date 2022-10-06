@@ -11,14 +11,25 @@ The first thing we need to do is commit the changes we've made to our **resume**
 1. Write a message to go along with your commit. Something like "Add resume content" works great. 
 1. Select the check mark icon at the top of the Source Control pane. This will commit your changes to your repository. 
 
-## Set up GitHub Pages
+## Set up Azure Static Web Apps via Portal
 
-Next, we'll need to turn on GitHub Pages for our **resume** repository.
-1. Navigate to your repository on GitHub.com, and select **Settings**, next to the gear icon. 
-1. Select **Pages** in the left-hand menu. 
-1. Under **Source** select the **main** branch of your repository to be the source for your new website. Then, select **Save**. 
-![The GitHub Pages settings page, showing the main branch selected as the source.](./images/select-pages-source.png)
-1. After you select your source, you'll be notified of the address of your new website. It should look something like *your-username.github.io/resume/*. Navigate to the page, and check out your live resume website!
+Next, we'll need to turn on SWA for our **resume** repository.
+1. Navigate to the Azure portal.
+1. Select Create a Resource.
+1. Search for Static Web Apps.
+1. Select Static Web Apps.
+1. Select Create.
+![The Azure Portal page, showing the fields to be filled in Static Web App creation.](./images/quickstart-portal-basics.png)
+1. After you sign in with GitHub, enter the repository information.
+![The Azure Portal page, showing the repository information.](./images/quickstart-portal-source-control.png)
+
+1. Select Custom from the Build Presets dropdown.
+1. Type ./src in the App location box.
+1. Leave the Api location box empty.
+1. Type ./src App artifact location box.
+1. Select Review + create.
+
+The Static Web Apps Overview window displays a series of links that help you interact with your web app. Once GitHub Actions workflow is complete, select on the URL link to open the website in new tab.
 
 ## Quiz
 
@@ -41,4 +52,5 @@ Q3: CSS is NOT used to manage:
 
 ## Summary
 
-Congratulations! You have successfully created a resume website entirely in the browser using HTML, CSS, github.dev, and GitHub Pages! You can continue to grow your web development skills by modifying this page, or exploring [content on Microsoft Learn](https://docs.microsoft.com/learn/paths/web-development-101/?WT.mc_id=academic-51109-ornella).
+
+Congratulations! You have successfully created a resume website entirely in the browser using HTML, CSS, github.dev, and Static Web Apps! You can continue to grow your web development skills by modifying this page, or exploring [content on Microsoft Learn](https://docs.microsoft.com/learn/paths/web-development-101/?WT.mc_id=academic-51109-ornella).

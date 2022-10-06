@@ -6,6 +6,12 @@
       "apiLocation": "api",
       "outputLocation": ".",
       "apiBuildCommand": "npm run build --if-present"
+    },
+    "workshop-library-resume": {
+      "appLocation": "solution",
+      "apiLocation": "api",
+      "outputLocation": ".",
+      "apiBuildCommand": "npm run build --if-present"
     }
   }
 }

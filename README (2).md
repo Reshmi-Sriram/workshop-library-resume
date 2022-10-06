@@ -6,7 +6,7 @@ Want to make your application stand out to recruiters and learn a few new skills
 
 Using the power of github.dev, a service that allows you to work with files in GitHub, and GitHub Pages, you'll code a resume website using only your browser window. By the end of the workshop, you'll be able to send anyone a link where they can view your resume online. 
 
-| **Project Goal**              | Build a resume web site using HTML, CSS, and host it on GitHub pages                                    |
+| **Project Goal**              | Build a resume web site using HTML, CSS, and host it on Static Web Apps                                    |
 | ----------------------------- | --------------------------------------------------------------------- |
 | **What will you learn**       | Basics of HTML and CSS to showcase your skills in an online resume                                        |
 | **What you'll need**          | A modern web browser like [Microsoft Edge](https://www.microsoft.com/edge?WT.mc_id=academic-51109-ornella) or [Google Chrome](https://www.google.com/chrome/) and a [GitHub account](https://github.com) |
@@ -34,7 +34,7 @@ In this workshop, you will:
 * [Learn basic HTML to outline your resume](1-create-html.md)
 * [Fill in your resume content](2-add-content.md)
 * [Style your resume with CSS](3-add-style.md)
-* [Create your resume website with GitHub Pages](4-creating-website.md)
+* [Create your resume website with Static Web Apps](4-creating-website.md)
 
 Let's get started!
 

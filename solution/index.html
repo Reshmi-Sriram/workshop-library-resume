@@ -1,16 +1,16 @@
 <html>
 	<head>
 		<link href="style.css" rel="stylesheet">
-		<title>Reshmi Sriram resume</title>
+		<title>Your name resume</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	</head>
 
 	<body>
 		<header id="header">
 			<!-- resume header with your name and title -->
-			<h1>RESHMI SRIRAM</h1>
+			<h1>YOUR NAME</h1>
 			<hr>
-			MY AMAZING HTML RESUME!
+			YOUR TITLE
 			<hr>
 		</header>
 		<main>
@@ -20,39 +20,31 @@
 					<!-- contact info including social media -->
                     <p>
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:reshmisriram@microsoft.com">reshmisriram@microsoft.com</a>
+                        <a href="mailto:your-email@example.com">your-email@example.com</a>
                     </p>
                     <p>
                         <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="https://github.com/Reshmi-Sriram">Reshmi-Sriram</a>
+                        <a href="github.com/gh-username">gh-username</a>
                     </p>
                     <p>
                         <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="https://linkedin.com/in/reshmi-sriram/">reshmisriram</a>
+                        <a href="linkedin.com/linkedin-username">linkedin-username</a>
                     </p>
 				</section>
 				<section>
 					<h2>SKILLS</h2>
 					<!-- your skills -->
-                    <p>HTML, CSS, GitHub, VS Code, <b>Static Web Apps</b>...</p>
-					<p>Talking, presenting, pretending to code...</p>
+                    <p>HTML, CSS, GitHub, VS Code...</p>
 				</section>
 				<section>
 					<h2>EDUCATION</h2>
 					<!-- your education -->
-                    <h3>MBA - BUSINESS MANAGEMENT</h3>
+                    <h3>YOUR MAJOR</h3>
                     <p>
-                        XLRI Jamshedpur
+                        Your university or school
                     </p>
                     <p>
-                        2019-2021
-                    </p>
-					<h3>B.TECH COMPUTER SCIENCE</h3>
-                    <p>
-                        National Institute of Technology Calicut
-                    </p>
-                    <p>
-                        2013-2017
+                        2018-2022
                     </p>
 				</section>            
 			</article>
@@ -60,58 +52,25 @@
 				<section>
 					<h2>ABOUT</h2>
 					<!-- about you -->
-					<img src="/images/Reshmi Sriram.jpg" style="height: 150px;">
-					<p>Heyy, Reshmi here! I am a Program Manager at Azure Static Web Apps, Microsoft. I come from a technical + business background, and love to learn new ways of coding with the developers :)</p>
-					<p>Looking for more fun opportunities to widen my learning, experience first-hand development revolutionaries, and solve developer painpoints!</p>
+					<p>A brief paragraph about you and what kind of company you want to work for.</p>
 				</section>
 				<section>
 					<h2>WORK EXPERIENCE</h2>
 					<!-- your work experience -->
-                    <h3>Program Manager - Microsoft</h3>
+                    <h3>JOB TITLE</h3>
                     <p>
-                            2021- Current
+                            Company Name | 2008 - 2010
+                    </p>
+                    <p>
+                            Describe what you did in this position with one summary sentence and no more than 3 bullet points with specific highlights
                     </p>
                     <ul>
-                            <li>Hosted Static Web Apps Anniversary - <a href="https://aka.ms/swaanniversary">May 2022</a></li>
-                            <li>Launched features such as Azure Pipeline integration, SWA CLI, and more </li>
-                            <li>Next.js hyrbid rendering and other Cool accomplishments upcoming ;)</li>
-                    </ul>
-					
-					<h3>Senior Analyst - Deutsche Bank</h3>
-                    <p>
-                            2017-2019
-                    </p>
-                    <ul>
-                            <li>Workday Cloud Migration, HRBP</li>
-                            <li>Other Coding stuff</li>
+                            <li>Cool accomplishment</li>
+                            <li>Cool accomplishment</li>
+                            <li>Cool accomplishment</li>
                     </ul>
 				</section>
-			
-			<section>
-				<table id="project">
-				</table>
-				<button id="btn" style="height: 30px; font-size: large; background-color: black; color: beige;" class="btn btn-primary" onclick=displayProjects()>List of projects</button>
-			</section>
 			</article>
-			<script>
-				async function displayProjects()
-				{
-					
-					let response = await fetch('/api/projects');
-					response = await response.json();
-					
-					const div = document.getElementById("project");
-					var heading = div.insertRow();
-					heading.innerHTML = "<th>Name</th><th></th><th>Description</th>";
-					for (let index = 0; index < response.length; index++) {
-						var row = div.insertRow();
-						row.innerHTML = "<td>"+response[index].title+"</td>"+ "<td> </td>"
-					 		+"<td>"+response[index].description+"</td>";
-					}
-					btn.style.display='none';
-				}
-			</script>
 		</main>
-		
 	</body>
 </html>

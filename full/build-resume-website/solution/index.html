@@ -86,30 +86,29 @@
                             <li>Other Coding stuff</li>
                     </ul>
 				</section>
-			</article>
-				<div>
-					<p id="demo">Click button to see the projects</p>
-					<table id="project">
-					</table>
-				</div>
+			
 			<section>
-				<button class="btn btn-primary" onclick=displayProjects()>Click me</button>
+				<table id="project">
+				</table>
+				<button id="btn" style="height: 30px; font-size: large; background-color: black; color: beige;" class="btn btn-primary" onclick=displayProjects()>List of projects</button>
 			</section>
+			</article>
 			<script>
 				async function displayProjects()
 				{
+					
 					let response = await fetch('/api/projects');
 					response = await response.json();
 					
 					const div = document.getElementById("project");
 					var heading = div.insertRow();
-					heading.innerHTML = "<th>Name</th><th>Description</th>";
+					heading.innerHTML = "<th>Name</th><th></th><th>Description</th>";
 					for (let index = 0; index < response.length; index++) {
 						var row = div.insertRow();
-						row.innerHTML = "<td>"+response[index].title+"</td>"
+						row.innerHTML = "<td>"+response[index].title+"</td>"+ "<td> </td>"
 					 		+"<td>"+response[index].description+"</td>";
 					}
-					// div.textContent = response[0].description; 
+					btn.style.display='none';
 				}
 			</script>
 		</main>

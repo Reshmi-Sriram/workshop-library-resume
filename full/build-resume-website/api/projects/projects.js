@@ -1,12 +1,12 @@
 const data = {
     projects: [
       {
-        title: 'Project1',
-        description: 'Something about Proj1'
+        title: 'Amazing Project!',
+        description: 'JUST AMAZING!'
       },
       {
-        title: 'Project2',
-        description: 'Something abt Project2'
+        title: 'Kickass Project',
+        description: 'NO WORDS TO DESCRIBE <3'
       }
     ],
   };

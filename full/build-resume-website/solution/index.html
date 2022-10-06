@@ -87,17 +87,32 @@
                     </ul>
 				</section>
 			</article>
+				<div>
+					<p id="demo">Click button to see the projects</p>
+					<table id="project">
+					</table>
+				</div>
 			<section>
-				<button class="btn btn-primary" onclick=getProjects()>Click me</button>
+				<button class="btn btn-primary" onclick=displayProjects()>Click me</button>
 			</section>
-			<p id="demo"></p>
+			<script>
+				async function displayProjects()
+				{
+					let response = await fetch('/api/projects');
+					response = await response.json();
+					
+					const div = document.getElementById("project");
+					var heading = div.insertRow();
+					heading.innerHTML = "<th>Name</th><th>Description</th>";
+					for (let index = 0; index < response.length; index++) {
+						var row = div.insertRow();
+						row.innerHTML = "<td>"+response[index].title+"</td>"
+					 		+"<td>"+response[index].description+"</td>";
+					}
+					// div.textContent = response[0].description; 
+				}
+			</script>
 		</main>
-		<script>
-			function getProjects(){
-				let response = fetch('/api/projects');
-    			projects = response.json();
-				document.getElementById("demo").innerHTML = projects;
-			}
-		</script>
+		
 	</body>
 </html>

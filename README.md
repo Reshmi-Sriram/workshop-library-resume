@@ -45,6 +45,14 @@ Be sure to give [feedback about this workshop](https://forms.office.com/r/MdhJWM
 
 [Code of Conduct](../../CODE_OF_CONDUCT.md)
 
-## Resources
+## Static Web App Resources
+1. Official [Documentation](https://aka.ms/swa)
+1. Static Web Apps CLI [Documentation](https://aka.ms/swa-cli-ga)
+1. Latest monthly community updates and other relevant SWA blogs - [This Month in SWA](https://aka.ma/30daysofswa)
+1. Azure Tips and Tricks - [SWA Series](https://youtu.be/w-tLZjO6XMc)
+
+## Other Resources
 To see the full workshop repository with other interesting and easy-learn modules, kindly check out this [repository](https://github.com/microsoft/workshop-library)
+
+Follow Static Web Apps on [Github repo](https://github.com/Azure/static-web-apps/), [Twitter](https://twitter.com/AzureStaticApps) and [Dev.to](https://dev.to/t/staticwebapps) 💖
 
